@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie AI</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 EduGenie AI</h1>
+
+        <p class="subtitle">
+            AI-Powered Learning Assistant Platform
+        </p>
+
+        <!-- MAIN CARD -->
+
+        <div class="card">
+
+            <!-- Upload -->
+
+            <div class="upload-section">
+
+                <label>
+                    Upload Study Material (PDF)
+                </label>
+
+                <input type="file"
+                    id="pdfFile">
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button onclick="generateSummary()">
+                    Generate Summary
+                </button>
+
+                <button onclick="generateQuiz()">
+                    Generate Quiz
+                </button>
+
+            </div>
+
+            <!-- Chat Section -->
+
+            <div class="chat-section">
+
+                <input type="text"
+                    id="question"
+                    placeholder="Ask a question about the topic...">
+
+                <button onclick="askAI()">
+                    Ask AI
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- OUTPUT -->
+
+        <div class="output-card"
+            id="outputCard">
+
+            <h2>Output</h2>
+
+            <div id="output"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
